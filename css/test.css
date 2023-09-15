@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.geeks {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #090;
+    padding-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.geeks1 {
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.types h2 {
+    width: 350px;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: rgb(255, 210, 85);
+}
+
+#one {
+    animation-timing-function: ease;
+}
+
+#two {
+    animation-timing-function: linear;
+}
+
+#three {
+    animation-timing-function: ease-in;
+}
+
+#four {
+    animation-timing-function: ease-out;
+}
+
+#five {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes text {
+    from {
+        margin-left: 60%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+#delayone {
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+#delaytwo {
+    animation-name: example;
+    animation-duration: 10s;
+    animation-delay: 10s;
+}
+
+@keyframes example {
+    from {
+        background-color: orange;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+#cOne {
+    animation-name: colors;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+#cTwo {
+    animation-name: colors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colors {
+    from {
+        background-color: orange;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+.movement h2 {
+    width: 100px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#normal {
+    animation-direction: normal;
+}
+
+#reverse {
+    animation-direction: reverse;
+}
+
+#alt {
+    animation-direction: alternate;
+}
+
+#altRev {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move {
+    from {
+        margin-left: 60%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.fill h2 {
+    border-block-end-width: 400px;
+    background-color: orange;
+    animation-name: fillt;
+    animation-duration: 3s;
+}
+
+#none {
+    animation-fill-mode: none;
+}
+
+#forward {
+    animation-fill-mode: forwards;
+}
+
+#back {
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+
+#both {
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes fillt {
+    from {
+        margin-left: 0%;
+        background-color: #aaa;
+    }
+
+    to {
+        margin-left: 60%;
+        background-color: #008000;
+    }
+}
+
